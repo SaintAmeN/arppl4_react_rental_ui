@@ -1,0 +1,34 @@
+.AppHeader {
+    background-color: var(--header);
+    height: 48px; /* wielokrotność 4 */
+    width: 80vw; /* view width */
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+}
+
+.HeaderLeft {
+    height: 100%;
+    margin-left: 8px
+}
+
+.HeaderLeft p {
+    margin: calc(48px / 2 - 20px / 2) 0 0 0;
+}
+
+.HeaderRight {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.HeaderRight div{
+    background-color: var(--button-color);
+    height: 50%;
+    /*4 -> gora prawo dol lewo (ruch wskazowek zegara)*/
+    /*2 -> gora+dol / prawo+lewo */
+    /*1 -> gora+dol+prawo+lewo */
+    margin: 0 4px;
+    /*border: 1px solid black;*/
+    min-width: 64px;
+}
