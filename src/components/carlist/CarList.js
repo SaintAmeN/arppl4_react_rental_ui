@@ -59,11 +59,13 @@ const CarList = () => {
 
     return (
         <div className={classes.CarList}>
-            <Link to={"/cars/form"}>
-                <IconButton>
-                    <ControlPoint/>
-                </IconButton>
-            </Link>
+            <div className={classes.PlusButtonAlignedRight}>
+                <Link to={"/cars/form"}>
+                    <IconButton className={classes.PlusButtonIcon}>
+                        <ControlPoint/>
+                    </IconButton>
+                </Link>
+            </div>
             <Card cardTitle={"Super Cars for Rent"}>
                 <Grid container direction={"row"}> {/*cała tabela*/}
                     <Grid container className={classes.TableHeader}> {/*wiersz nagłówka*/}

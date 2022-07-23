@@ -27,6 +27,20 @@
     width: 90%;
 }
 
+.PlusButtonAlignedRight{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.PlusButtonIcon{
+    background-color: var(--button-add-color) !important;
+}
+
+
+
+
+
 
 
 

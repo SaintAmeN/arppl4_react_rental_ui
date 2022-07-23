@@ -2,6 +2,7 @@
     background-color: var(--header);
     height: 48px; /* wielokrotność 4 */
     width: 80vw; /* view width */
+    max-width: 968px;
     margin: auto;
     display: flex;
     vertical-align: middle;
@@ -22,8 +23,13 @@
     align-items: center;
 }
 
-.HeaderRight div{
+.HeaderRight a {
+    text-decoration: none;
+}
+
+.HeaderRight a div {
     background-color: var(--button-color);
+    border: 2px solid var(--button-color);
     height: 50%;
     /*4 -> gora prawo dol lewo (ruch wskazowek zegara)*/
     /*2 -> gora+dol / prawo+lewo */
@@ -31,4 +37,11 @@
     margin: 0 4px;
     /*border: 1px solid black;*/
     min-width: 64px;
+    padding: 4px 8px;
+    color: white;
+    transition: 1s border ;
+}
+
+.HeaderRight a div:hover {
+    border: 2px solid #03045E;
 }
