@@ -8,8 +8,13 @@
 
 .FormItem div{
     width: 100%;
+    background-color: var(--form-fields-color);
 }
 
 .FormItem div input {
-    background-color: white;
+    background-color: var(--form-fields-color);
+}
+
+.FormItem div div {
+    background-color: var(--form-fields-color);
 }
